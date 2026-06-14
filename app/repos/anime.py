@@ -15,6 +15,11 @@ def get_anime_by_name(db: Session, name: str):
     result = db.execute(stmt)
     return result.scalar_one_or_none()
 
+def get_anime_list(db: Session):
+    stmt = select(Anime)
+    result = db.execute(stmt)
+    return result.scalars().all()
+
 # SAVE
 def save_anime(db: Session, anime: Anime):
     try:

@@ -1,25 +1,24 @@
 from pydantic import BaseModel, ConfigDict
 from typing import Optional
 
-
-class AnimeBase(BaseModel):
+class NovelBase(BaseModel):
     name: str
     genre_id: int
     season: int
-    total_episodes: int
-    watched_episodes: int
+    total_pages: int
+    watched_pages: int
     model_config = ConfigDict(from_attributes=True)
 
-class AnimeCreate(AnimeBase):
+class NovelCreate(NovelBase):
     pass
 
 class NovelUpdate(BaseModel):
     name: Optional[str] = None
     genre_id: Optional[int] = None
     season: Optional[int] = None
-    total_episodes: Optional[int] = None
-    watched_episodes: Optional[int] = None
+    total_pages: Optional[int] = None
+    watched_pages: Optional[int] = None
     model_config = ConfigDict(from_attributes=True)
 
-class AnimeRead(AnimeBase):
+class NovelRead(NovelBase):
     id: int

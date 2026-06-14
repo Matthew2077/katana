@@ -1,19 +1,24 @@
 from pydantic import BaseModel, ConfigDict
 from typing import Optional
 
-# USER ----------
-class UserBase(BaseModel):
+
+class AdminBase(BaseModel):
     name: str
+    rank: str
+    department: str
     model_config = ConfigDict(from_attributes=True)
 
-class UserCreate(UserBase):
+class AdminCreate(AdminBase):
     pass
 
-class UserUpdate(BaseModel):
+class AdminUpdate(BaseModel):
     name: Optional[str] = None
+    rank: Optional[str] = None
+    department: Optional[str] = None
     model_config = ConfigDict(from_attributes=True)
 
-class UserRead(UserBase):
+
+class AdminRead(AdminBase):
     id: Optional[int] = None
 
 

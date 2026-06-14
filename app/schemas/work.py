@@ -1,19 +1,19 @@
 from pydantic import BaseModel, ConfigDict
 from typing import Optional
 
-# USER ----------
-class UserBase(BaseModel):
+class WorkBase(BaseModel):
     name: str
+    genre_id: int
     model_config = ConfigDict(from_attributes=True)
 
-class UserCreate(UserBase):
+class WorkCreate(WorkBase):
     pass
 
-class UserUpdate(BaseModel):
+class WorkUpdate(BaseModel):
+    id: Optional[int] = None
     name: Optional[str] = None
+    genre_id: Optional[int] = None
     model_config = ConfigDict(from_attributes=True)
 
-class UserRead(UserBase):
-    id: Optional[int] = None
-
-
+class WorkRead(WorkBase):
+    id: int

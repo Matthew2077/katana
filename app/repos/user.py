@@ -1,10 +1,10 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
-from core.models import User, Admin
+from core.models import User
 from typing import Dict
 
-
+# READ
 def get_user_by_id(db: Session, id: int):
     stmt = select(User).where(User.id == id)
     result = db.execute(stmt)
@@ -15,16 +15,12 @@ def get_user_by_name(db:Session, name: str):
     result = db.execute(stmt)
     return result.scalar_one_or_none()
 
-def get_admin_by_id(db: Session, id: int):
-    stmt = select(Admin).where(Admin.id == id)
+def get_user_list(db: Session):
+    stmt = select(User)
     result = db.execute(stmt)
-    return result.scalar_one_or_none()
+    return result.scalars().all()
 
-def get_admin_by_name(db: Session, name: str):
-    stmt = select(Admin).where(Admin.name == name)
-    result = db.execute(stmt)
-    return result.scalar_one_or_none()
-
+# SAVE: 
 def save_user(db: Session, user: User):
     try:
         db.add(user)
