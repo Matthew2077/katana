@@ -55,7 +55,7 @@ def edit_manga(db: Session, manga: Manga, data: Dict):
         raise ValueError("Error updating  manga on DB")
 
 # DELETE
-def delete_manga(db: Session, manga: Manga):
+def erase_manga(db: Session, manga: Manga):
     try:
         db.delete(manga)
         db.commit()

@@ -54,7 +54,7 @@ def edit_work(db: Session, work: Work, data: Dict):
         raise ValueError("Error updating  work on DB")
 
 # DELETE
-def delete_work(db: Session, work: Work):
+def erase_work(db: Session, work: Work):
     try:
         db.delete(work)
         db.commit()

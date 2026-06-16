@@ -44,7 +44,7 @@ def edit_anime(db: Session, anime: Anime, data: Dict):
         raise ValueError("Error updating  anime on DB")
 
 # DELETE
-def delete_anime(db: Session, anime: Anime):
+def erase_anime(db: Session, anime: Anime):
     try:
         db.delete(anime)
         db.commit()

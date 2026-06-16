@@ -13,7 +13,7 @@ class AnimeBase(BaseModel):
 class AnimeCreate(AnimeBase):
     pass
 
-class NovelUpdate(BaseModel):
+class AnimeUpdate(BaseModel):
     name: Optional[str] = None
     genre_id: Optional[int] = None
     season: Optional[int] = None

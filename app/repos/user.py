@@ -44,7 +44,7 @@ def edit_user(db: Session, user: User, data: Dict):
         raise ValueError("Error updating user on DB")
 
 # DELETE
-def delete_user(db: Session, user: User):
+def erase_user(db: Session, user: User):
     try:
         db.delete(user)
         db.commit()

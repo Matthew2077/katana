@@ -43,7 +43,7 @@ def edit_admin(db: Session, admin: Admin, data: Dict):
         raise ValueError("Error updating admin on DB")
 
 # DELETE
-def delete_admin(db: Session, admin: Admin):
+def erase_admin(db: Session, admin: Admin):
     try:
         db.delete(admin)
         db.commit()

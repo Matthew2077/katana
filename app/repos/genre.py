@@ -44,7 +44,7 @@ def edit_genre(db: Session, genre: Genre, data: Dict):
         raise ValueError("Error updating  genre on DB")
 
 # DELETE
-def delete_genre(db: Session, genre: Genre):
+def erase_genre(db: Session, genre: Genre):
     try:
         db.delete(genre)
         db.commit()

@@ -55,7 +55,7 @@ def edit_novel(db: Session, novel: Novel, data: Dict):
         raise ValueError("Error updating  novel on DB")
 
 # DELETE
-def delete_novel(db: Session, novel: Novel):
+def erase_novel(db: Session, novel: Novel):
     try:
         db.delete(novel)
         db.commit()
