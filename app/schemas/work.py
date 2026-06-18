@@ -10,7 +10,6 @@ class WorkCreate(WorkBase):
     pass
 
 class WorkUpdate(BaseModel):
-    id: Optional[int] = None
     name: Optional[str] = None
     genre_id: Optional[int] = None
     model_config = ConfigDict(from_attributes=True)

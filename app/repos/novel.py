@@ -20,17 +20,6 @@ def get_novel_list(db: Session):
     result = db.execute(stmt)
     return result.scalars().all()
 
-def save_novel(db: Session, novel: Novel):
-    try:
-        db.add(novel)
-        db.commit()
-        db.refresh(novel)
-        return novel
-    except:
-        db.rollback()
-        raise ValueError("Error saving novel on DB")
-    
-
 # SAVE
 def save_novel(db: Session, novel: Novel):
     try:

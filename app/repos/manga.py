@@ -20,17 +20,6 @@ def get_manga_list(db: Session):
     result = db.execute(stmt)
     return result.scalars().all()
 
-def save_manga(db: Session, manga: Manga):
-    try:
-        db.add(manga)
-        db.commit()
-        db.refresh(manga)
-        return manga
-    except:
-        db.rollback()
-        raise ValueError("Error saving manga on DB")
-    
-
 # SAVE
 def save_manga(db: Session, manga: Manga):
     try:

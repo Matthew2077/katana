@@ -12,6 +12,9 @@ logging.basicConfig(filename='katana.log', level=logging.DEBUG)
 def read_user_by_id(db: Session, id: int):
     try: 
         result = get_user_by_id(db, id)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"User {id} not found")
+        
         return result
     except Exception as e:
         logger.info(f"id: {id}, Layer: services, usage: read id")
@@ -20,12 +23,15 @@ def read_user_by_id(db: Session, id: int):
 def read_user_by_name(db: Session, name: str):
     try: 
         result = get_user_by_name(db, name)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"User {name} not found")
+        
         return result
     except Exception as e:
         logger.info(f"name: {name}, Layer: services, usage: read name")
         logger.error(f"error: {e}", exc_info=True)
 
-def get_all_users(db: Session):
+def read_all_users(db: Session):
     try:
         result = get_user_list(db)
         return result
@@ -36,7 +42,7 @@ def get_all_users(db: Session):
 # CREATE NEW user
 def create_user(db: Session, user: UserCreate):
     try:
-        new_user = user(
+        new_user = User(
             id = user.id,
             name = user.name
         )

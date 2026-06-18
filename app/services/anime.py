@@ -12,6 +12,9 @@ logging.basicConfig(filename='katana.log', level=logging.DEBUG)
 def read_anime_by_id(db: Session, id: int):
     try: 
         result = get_anime_by_id(db, id)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"Anime {id} not found")
+        
         return result
     except Exception as e:
         logger.info(f"id: {id}, Layer: services, usage: read id")
@@ -20,13 +23,16 @@ def read_anime_by_id(db: Session, id: int):
 def read_anime_by_name(db: Session, name: str):
     try: 
         result = get_anime_by_name(db, name)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"Anime {name} not found")
+        
         return result
     except Exception as e:
         logger.info(f"name: {name}, Layer: services, usage: read name")
         logger.error(f"error: {e}", exc_info=True)
 
 
-def get_all_manga(db: Session):
+def read_all_manga(db: Session):
     try:
         result = get_anime_list(db)
         return result

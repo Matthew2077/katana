@@ -1,8 +1,9 @@
 from fastapi import FastAPI
-from core import Base, engine
+from core.database import Base, engine
 import logging
 from fastapi.middleware.cors import CORSMiddleware
-import logging
+from api import work
+
 
 app = FastAPI(
     title="Katana API",
@@ -14,7 +15,7 @@ app = FastAPI(
 Base.metadata.create_all(bind=engine)
 
 # Routers
-# app.include_router(note.router, prefix="", tags=[""])
+app.include_router(work.router, prefix="/api", tags=["work"])
 
 @app.get("/")
 def root():
@@ -33,3 +34,5 @@ app.add_middleware(
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename='katana.log', level=logging.DEBUG)
 logger.info('Katana Started')
+
+

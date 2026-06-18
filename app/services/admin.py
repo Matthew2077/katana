@@ -12,6 +12,8 @@ logging.basicConfig(filename='katana.log', level=logging.DEBUG)
 def read_admin_by_id(db: Session, id: int):
     try: 
         result = get_admin_by_id(db, id)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"Admin {id} not found")
         return result
     except Exception as e:
         logger.info(f"id: {id}, Layer: services, usage: read id")
@@ -20,12 +22,14 @@ def read_admin_by_id(db: Session, id: int):
 def read_admin_by_name(db: Session, name: str):
     try: 
         result = get_admin_by_name(db, name)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"Admin {name} not found")
         return result
     except Exception as e:
         logger.info(f"name: {name}, Layer: services, usage: read name")
         logger.error(f"error: {e}", exc_info=True)
 
-def get_all_admins(db: Session):
+def read_all_admins(db: Session):
     try:
         result = get_admin_list(db)
         return result

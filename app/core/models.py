@@ -1,79 +1,84 @@
-
 import enum
+from typing import Optional
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import ForeignKey, Enum
-from core import Base
+from core.database import Base
 
-class watch_status(enum.Enum):
+
+class WatchStatus(enum.Enum):
     PLANNED = "planned"
     ONGOING = "ongoing"
     COMPLETED = "completed"
     DROPPED = "dropped"
 
-# PROVVISORIO | REWORK quando inserisco AUTH ----
+
 class User(Base):
     __tablename__ = "user"
-    id: Mapped[int] = mapped_column(primary_kay=True, autoincrement=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
     name: Mapped[str] = mapped_column(unique=True, index=True)
 
-class Admin(User):
+
+class Admin(Base):
     __tablename__ = "admin"
-    rank: Mapped[str] # moderatore, helper, admin
-    department: Mapped[str] # campo d'azione: manga, novels, manga, moderazione... etc
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
+    name: Mapped[str] = mapped_column(unique=True, index=True)
+    rank: Mapped[str]
+    department: Mapped[str]
 
-# -----
 
-# ANIME / MANGA / LN
+class Genre(Base):
+    __tablename__ = "genre"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(unique=True, index=True)
+    label: Mapped[Optional[str]] = mapped_column(default=None)  # fix nullable
+    works: Mapped[list["Work"]] = relationship(back_populates="genre")  # fix back_populates
+
+
 class Work(Base):
     __tablename__ = "work"
-    id: Mapped[int] = mapped_column(primary_kay=True, autoincrement=True)
-    name: Mapped[str] = mapped_column(unique=True, index=True) # Nome globale
-    genre_id: Mapped[int] = mapped_column(ForeignKey("categories.id"), index=True)
-
-    genre: Mapped["Genre"] = relationship(back_populates="anime")
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(unique=True, index=True)
+    genre_id: Mapped[int] = mapped_column(ForeignKey("genre.id"), index=True)
+    genre: Mapped["Genre"] = relationship(back_populates="works")  # fix plurale
     anime: Mapped[list["Anime"]] = relationship(back_populates="work")
     manga: Mapped[list["Manga"]] = relationship(back_populates="work")
     novel: Mapped[list["Novel"]] = relationship(back_populates="work")
 
+
 class Anime(Base):
     __tablename__ = "anime"
-    id: Mapped[int] = mapped_column(primary_kay=True, autoincrement=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(unique=True, index=True)
     season: Mapped[int]
-    genre_id: Mapped[int]
-    status: Mapped[watch_status] = mapped_column(enum(watch_status), default=watch_status.PLANNED)
-    total_episodes: Mapped[int] = mapped_column(nullable=True, default=12)
-    watched_episodes: Mapped[int] = mapped_column(nullable=True, default=0)
-
+    work_id: Mapped[int] = mapped_column(ForeignKey("work.id"), index=True)  # fix FK
+    genre_id: Mapped[int] = mapped_column(ForeignKey("genre.id"), index=True)  # fix FK
+    status: Mapped[WatchStatus] = mapped_column(Enum(WatchStatus), default=WatchStatus.PLANNED)
+    total_episodes: Mapped[Optional[int]] = mapped_column(default=12)  # fix Optional
+    watched_episodes: Mapped[Optional[int]] = mapped_column(default=0)
     work: Mapped["Work"] = relationship(back_populates="anime")
 
-class Manga(Base): #Manga e Manwha insieme
+
+class Manga(Base):
     __tablename__ = "manga"
-    id: Mapped[int] = mapped_column(primary_kay=True, autoincrement=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(unique=True, index=True)
     season: Mapped[int]
-    genre_id: Mapped[int]
-    status: Mapped[watch_status] = mapped_column(enum(watch_status), default=watch_status.PLANNED)
-    total_chapters: Mapped[int] = mapped_column(nullable=True, default=0)
-    watched_chapters: Mapped[int] = mapped_column(nullable=True, default=0)
-
+    work_id: Mapped[int] = mapped_column(ForeignKey("work.id"), index=True)
+    genre_id: Mapped[int] = mapped_column(ForeignKey("genre.id"), index=True)
+    status: Mapped[WatchStatus] = mapped_column(Enum(WatchStatus), default=WatchStatus.PLANNED)
+    total_chapters: Mapped[Optional[int]] = mapped_column(default=0)
+    watched_chapters: Mapped[Optional[int]] = mapped_column(default=0)
     work: Mapped["Work"] = relationship(back_populates="manga")
 
-class Novel(Base): # Light novel
-    __tablename__ = "novel"
-    id: Mapped[int] = mapped_column(primary_kay=True, autoincrement=True)
-    name: Mapped[str] = mapped_column(unique=True, index=True)
-    season: Mapped[int] # is more like.. numero del libro, non stagione
-    genre_id: Mapped[int]
-    status: Mapped[watch_status] = mapped_column(enum(watch_status), default=watch_status.PLANNED)
-    total_pages: Mapped[int] = mapped_column(default=0)
-    watched_pages: Mapped[int] = mapped_column(default=0) # default con o senza nullable?
 
-    work: Mapped["Work"] = relationship(back_populates="novel")
-    
-# Genere opere:
-class Genre(Base):
-    __tablename__ = "genre"
-    id: Mapped[int] = mapped_column(primary_kay=True, autoincrement=True)
+class Novel(Base):
+    __tablename__ = "novel"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(unique=True, index=True)
-    label: Mapped[str] = mapped_column(nullable=True)
+    volume: Mapped[int]  # rinominato da season
+    work_id: Mapped[int] = mapped_column(ForeignKey("work.id"), index=True)
+    genre_id: Mapped[int] = mapped_column(ForeignKey("genre.id"), index=True)
+    status: Mapped[WatchStatus] = mapped_column(Enum(WatchStatus), default=WatchStatus.PLANNED)
+    total_pages: Mapped[int] = mapped_column(default=0)
+    watched_pages: Mapped[int] = mapped_column(default=0)
+    work: Mapped["Work"] = relationship(back_populates="novel")

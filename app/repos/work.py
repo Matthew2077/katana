@@ -14,17 +14,7 @@ def get_work_by_name(db: Session, name: str):
     stmt = select(Work).where(Work.name == name)
     result = db.execute(stmt)
     return result.scalar_one_or_none()
-
-def save_work(db: Session, work: Work):
-    try:
-        db.add(work)
-        db.commit()
-        db.refresh(work)
-        return work
-    except:
-        db.rollback()
-        raise ValueError("Error saving work on DB")
-    
+  
 def get_work_list(db: Session):
     stmt = select(Work)
     result = db.execute(stmt)
