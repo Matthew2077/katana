@@ -6,7 +6,6 @@ from fastapi import HTTPException
 import logging
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(filename='katana.log', level=logging.DEBUG)
 
 # READ
 def read_user_by_id(db: Session, id: int):
@@ -34,6 +33,9 @@ def read_user_by_name(db: Session, name: str):
 def read_all_users(db: Session):
     try:
         result = get_user_list(db)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"DB has no users")
+        
         return result
     except Exception as e:
         logger.info("Layer: services, usage: read all")
@@ -60,7 +62,7 @@ def update_user(db: Session, user_id: int, data: UserUpdate):
 
         if user is None:
             logger.error(f"User {user_id} not found")
-            raise HTTPException(404)
+            raise HTTPException(status_code=404, detail=f"User {id} not found")
         
         update_data = data.model_dump(exclude_unset=True) # remove nones 
 
@@ -75,7 +77,7 @@ def delete_user(db: Session, user_id: int):
         user = read_user_by_id(db, user_id)
         if user is None:
             logger.error(f"User {user_id} not found")
-            raise HTTPException(404)
+            raise HTTPException(status_code=404, detail=f"User {id} not found")
         
         delete = erase_user(db, user)
         return user

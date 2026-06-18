@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from core.database import Base, engine
 import logging
 from fastapi.middleware.cors import CORSMiddleware
-from api import work
+from api import work, anime, manga, novel, genre, admin, user
 
 
 app = FastAPI(
@@ -15,7 +15,14 @@ app = FastAPI(
 Base.metadata.create_all(bind=engine)
 
 # Routers
-app.include_router(work.router, prefix="/api", tags=["work"])
+app.include_router(work.router, prefix="/api/work", tags=["work"])
+app.include_router(novel.router, prefix="/api/novel", tags=["novel"])
+app.include_router(manga.router, prefix="/api/manga", tags=["manga"])
+app.include_router(anime.router, prefix="/api/anime", tags=["anime"])
+
+app.include_router(genre.router, prefix="/api/genre", tags=["genre"])
+# app.include_router(user.router, prefix="/api/user", tags=["user"])
+# app.include_router(admin.router, prefix="/api/admin", tags=["admin"])
 
 @app.get("/")
 def root():

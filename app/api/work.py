@@ -17,16 +17,21 @@ def work_read_by_id(id: int, db: Session = Depends(get_db)):
 def work_read_by_name(name: str, db: Session = Depends(get_db)):
     return read_work_by_name(db, name)
 
+@router.get("/", response_model=List[WorkRead])
+def work_read_all(db: Session = Depends(get_db)):
+    return read_all_work(db)
 
+# CREATE
 @router.post("/", response_model=WorkRead)
 def work_create(work: WorkCreate, db: Session = Depends(get_db)):
     return create_work(db, work)
 
-
+# UPDATE
 @router.patch("/{id}", response_model=WorkRead)
 def work_update(id: int, data: WorkUpdate, db: Session = Depends(get_db)):
     return update_work(db, id, data)
 
+# DELETE
 @router.delete("/{id}", response_model = WorkRead)
 def work_delete(id: int, db: Session = Depends(get_db)):
     return delete_work(db, id)

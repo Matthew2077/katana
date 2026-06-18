@@ -1,13 +1,19 @@
 from sqlalchemy.orm import Session
 from repos.work import get_work_by_id, get_work_by_name, get_work_list, save_work, edit_work, erase_work
 from repos.genre import get_genre_by_id
+from schemas.genre import GenreRead
 from core.models import Work
 from schemas.work import WorkCreate, WorkUpdate
 from fastapi import HTTPException
 import logging
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(filename='katana.log', level=logging.DEBUG)
+
+def check_genre_exists(db: Session, genre_id: int) -> GenreRead:
+    genre = get_genre_by_id(db, genre_id)
+    if genre is None:
+        raise HTTPException(status_code=404, detail=f"Genre {genre_id} not found")
+    return genre
 
 # READ
 def read_work_by_id(db: Session, id: int):
@@ -36,6 +42,9 @@ def read_work_by_name(db: Session, name: str):
 def read_all_work(db: Session):
     try:
         result = get_work_list(db)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"DB has no works")
+        
         return result
     except Exception as e:
         logger.info("Layer: services, usage: read all")
@@ -72,9 +81,7 @@ def update_work(db: Session, work_id: int, data: WorkUpdate):
             raise HTTPException(status_code=404, detail=f"Work {work_id} not found")
         
         # check if genre exist
-        genre = get_genre_by_id(db, data.genre_id)
-        if genre is None:
-            raise HTTPException(status_code=404, detail=f"Genre {work.genre_id} not found")
+        check_genre_exists(db, data.genre_id)
         
         # update obj
         update_data = data.model_dump(exclude_unset=True) # remove nones 

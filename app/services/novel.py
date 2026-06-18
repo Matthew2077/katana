@@ -1,12 +1,19 @@
 from sqlalchemy.orm import Session
 from repos.novel import get_novel_by_id, get_novel_by_name, get_novel_list, save_novel, edit_novel, erase_novel
+from repos.genre import get_genre_by_id
 from core.models import Novel
 from schemas.novel import NovelCreate, NovelUpdate
+from schemas.genre import GenreRead
 from fastapi import HTTPException
 import logging
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(filename='katana.log', level=logging.DEBUG)
+
+def check_genre_exists(db: Session, genre_id: int) -> GenreRead:
+    genre = get_genre_by_id(db, genre_id)
+    if genre is None:
+        raise HTTPException(status_code=404, detail=f"Genre {genre_id} not found")
+    return genre
 
 # READ
 def read_novel_by_id(db: Session, id: int):
@@ -34,6 +41,9 @@ def read_novel_by_name(db: Session, name: str):
 def read_all_novel(db: Session):
     try:
         result = get_novel_list(db)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"DB has no novels")
+        
         return result
     except Exception as e:
         logger.info("Layer: services, usage: read all")
@@ -63,13 +73,15 @@ def create_novel(db: Session, novel: NovelCreate):
 def update_novel(db: Session, novel_id: int, data: NovelUpdate):
     try:
         novel = read_novel_by_id(db, novel_id)
-
         if novel is None:
             logger.error(f"Novel {novel} not found")
-            raise HTTPException(404)
+            raise HTTPException(status_code=404, detail=f"Novel {novel_id} not found")
         
-        update_data = data.model_dump(exclude_unset=True) # remove nones 
+        # check if genre exist
+        check_genre_exists(db, data.genre_id)
+        
 
+        update_data = data.model_dump(exclude_unset=True) # remove nones 
         result = edit_novel(db, novel, update_data) # update_data need to be a dict
         return result
     
@@ -83,7 +95,7 @@ def delete_novel(db: Session, novel_id: int):
         novel = read_novel_by_id(db, novel_id)
         if novel is None:
             logger.error(f"Novel {novel_id} not found")
-            raise HTTPException(404)
+            raise HTTPException(status_code=404, detail=f"Novel {novel_id} not found")
         
         delete = erase_novel(db, novel)
         return novel

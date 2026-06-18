@@ -21,5 +21,5 @@ class MangaUpdate(BaseModel):
     watched_chapters: Optional[int] = None
     model_config = ConfigDict(from_attributes=True)
 
-class NovelRead(MangaBase):
+class MangaRead(MangaBase):
     id: int

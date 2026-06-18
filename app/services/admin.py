@@ -6,7 +6,6 @@ from fastapi import HTTPException
 import logging
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(filename='katana.log', level=logging.DEBUG)
 
 # READ
 def read_admin_by_id(db: Session, id: int):
@@ -32,6 +31,8 @@ def read_admin_by_name(db: Session, name: str):
 def read_all_admins(db: Session):
     try:
         result = get_admin_list(db)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"DB has no admins")
         return result
     except Exception as e:
         logger.info("Layer: services, usage: read all")
@@ -60,7 +61,7 @@ def update_admin(db: Session, admin_id: int, data: AdminUpdate):
 
         if admin is None:
             logger.error(f"Admin {admin_id} not found")
-            raise HTTPException(404)
+            raise HTTPException(status_code=404, detail=f"Admin {id} not found")
         
         update_data = data.model_dump(exclude_unset=True) # remove nones 
 
@@ -75,7 +76,7 @@ def delete_admin(db: Session, admin_id: int):
         admin = read_admin_by_id(db, admin_id)
         if admin is None:
             logger.error(f"Admin {admin_id} not found")
-            raise HTTPException(404)
+            raise HTTPException(status_code=404, detail=f"Admin {id} not found")
         
         delete = erase_admin(db, admin)
         return admin

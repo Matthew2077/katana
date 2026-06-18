@@ -3,10 +3,17 @@ from repos.manga import get_manga_by_id, get_manga_by_name, get_manga_list, save
 from core.models import Manga
 from schemas.manga import MangaCreate, MangaUpdate
 from fastapi import HTTPException
+from repos.genre import get_genre_by_id
+from schemas.genre import GenreRead
 import logging
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(filename='katana.log', level=logging.DEBUG)
+
+def check_genre_exists(db: Session, genre_id: int) -> GenreRead:
+    genre = get_genre_by_id(db, genre_id)
+    if genre is None:
+        raise HTTPException(status_code=404, detail=f"Genre {genre_id} not found")
+    return genre
 
 # READ
 def read_manga_by_id(db: Session, id: int):
@@ -34,6 +41,8 @@ def read_manga_by_name(db: Session, name: str):
 def read_all_manga(db: Session):
     try:
         result = get_manga_list(db)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"DB has no manga")
         return result
     except Exception as e:
         logger.info("Layer: services, usage: read all")
@@ -62,14 +71,17 @@ def create_manga(db: Session, manga: MangaCreate):
 # UPDATE 
 def update_manga(db: Session, manga_id: int, data: MangaUpdate):
     try:
+        # check if manga exist
         manga = read_manga_by_id(db, manga_id)
-
         if manga is None:
             logger.error(f"Manga {manga} not found")
-            raise HTTPException(404)
+            raise HTTPException(status_code=404, detail=f"Manga {id} not found")
         
-        update_data = data.model_dump(exclude_unset=True) # remove nones 
+        # check if genre exist
+        check_genre_exists(db, data.genre_id)
 
+        # update
+        update_data = data.model_dump(exclude_unset=True) # remove nones 
         result = edit_manga(db, manga, update_data) # update_data need to be a dict
         return result
     
@@ -83,7 +95,7 @@ def delete_manga(db: Session, manga_id: int):
         manga = read_manga_by_id(db, manga_id)
         if manga is None:
             logger.error(f"Manga {manga_id} not found")
-            raise HTTPException(404)
+            raise HTTPException(status_code=404, detail=f"Manga {id} not found")
         
         delete = erase_manga(db, manga)
         return manga

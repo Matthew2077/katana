@@ -3,10 +3,17 @@ from repos.anime import get_anime_by_id, get_anime_by_name, get_anime_list, save
 from core.models import Anime
 from schemas.anime import AnimeCreate, AnimeUpdate
 from fastapi import HTTPException
+from repos.genre import get_genre_by_id
+from schemas.genre import GenreRead
 import logging
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(filename='katana.log', level=logging.DEBUG)
+
+def check_genre_exists(db: Session, genre_id: int) -> GenreRead:
+    genre = get_genre_by_id(db, genre_id)
+    if genre is None:
+        raise HTTPException(status_code=404, detail=f"Genre {genre_id} not found")
+    return genre
 
 # READ
 def read_anime_by_id(db: Session, id: int):
@@ -32,9 +39,11 @@ def read_anime_by_name(db: Session, name: str):
         logger.error(f"error: {e}", exc_info=True)
 
 
-def read_all_manga(db: Session):
+def read_all_anime(db: Session):
     try:
         result = get_anime_list(db)
+        if result is None:
+            raise HTTPException(status_code=404, detail=f"DB has no anime")
         return result
     except Exception as e:
         logger.info("Layer: services, usage: read all")
@@ -63,14 +72,17 @@ def create_anime(db: Session, anime: AnimeCreate):
 # UPDATE 
 def update_anime(db: Session, anime_id: int, data: AnimeUpdate):
     try:
+        # check if anime exist
         anime = read_anime_by_id(db, anime_id)
-
         if anime is None:
             logger.error(f"Anime {anime_id} not found")
-            raise HTTPException(404)
+            raise HTTPException(status_code=404, detail=f"Anime {anime_id} not found")
         
-        update_data = data.model_dump(exclude_unset=True) # remove nones 
+        # check if genre exist
+        check_genre_exists(db, data.genre_id)
 
+        # update
+        update_data = data.model_dump(exclude_unset=True) # remove nones 
         result = edit_anime(db, anime, update_data) # update_data need to be a dict
         return result
     
@@ -84,7 +96,7 @@ def delete_anime(db: Session, anime_id: int):
         anime = read_anime_by_id(db, anime_id)
         if anime is None:
             logger.error(f"Anime {anime_id} not found")
-            raise HTTPException(404)
+            raise HTTPException(status_code=404, detail=f"Anime {id} not found")
         
         delete = erase_anime(db, anime)
         return anime
