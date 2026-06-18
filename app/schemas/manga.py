@@ -13,7 +13,7 @@ class MangaBase(BaseModel):
 class MangaCreate(MangaBase):
     pass
 
-class NovelUpdate(BaseModel):
+class MangaUpdate(BaseModel):
     name: Optional[str] = None
     genre_id: Optional[int] = None
     season: Optional[int] = None

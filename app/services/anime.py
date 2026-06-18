@@ -26,7 +26,7 @@ def read_anime_by_name(db: Session, name: str):
         logger.error(f"error: {e}", exc_info=True)
 
 
-def get_all_admins(db: Session):
+def get_all_manga(db: Session):
     try:
         result = get_anime_list(db)
         return result
@@ -50,7 +50,7 @@ def create_anime(db: Session, anime: AnimeCreate):
         result = save_anime(db, new_anime)
         return result
     except Exception as e: 
-        logger.info(f"Layer: services, usage: create, admin: {anime}")
+        logger.info(f"Layer: services, usage: create, anime: {anime}")
         logger.error(f"error: {e}", exc_info=True)
 
 
