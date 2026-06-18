@@ -1,850 +1,390 @@
 INFO:main:Katana Started
 INFO:main:Katana Started
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00018s] (1,)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
 INFO:main:Katana Started
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:2 changes detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/services/work.py'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00020s] (1,)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
 INFO:main:Katana Started
-DEBUG:watchfiles.main:4 changes detected: {(<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc.139666136113712'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc.139666136113712'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:2 changes detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/services/work.py'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-INFO:main:Katana Started
-DEBUG:watchfiles.main:4 changes detected: {(<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc.139881714950704'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc.139881714950704'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:2 changes detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/services/work.py'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-INFO:main:Katana Started
-DEBUG:watchfiles.main:4 changes detected: {(<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc.139832195932720'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc.139832195932720'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00030s] (1,)
+INFO:root:result: <core.models.Genre object at 0x7feba322d2b0>
+INFO:sqlalchemy.engine.Engine:ROLLBACK
 INFO:main:Katana Started
 INFO:main:Katana Started
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:2 changes detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/services/work.py')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
 INFO:main:Katana Started
-DEBUG:watchfiles.main:4 changes detected: {(<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log'), (<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc.139848095506992'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/work.cpython-314.pyc.139848095506992')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:2 changes detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/api/user.py')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00025s] (1,)
+INFO:root:result: <core.models.Genre object at 0x7fe7b23412b0>
+INFO:sqlalchemy.engine.Engine:ROLLBACK
 INFO:main:Katana Started
-DEBUG:watchfiles.main:13 changes detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log'), (<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/schemas/__pycache__/user.cpython-314.pyc.140383305864624'), (<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/repos/__pycache__/user.cpython-314.pyc.140383305864240'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/user.cpython-314.pyc'), (<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/user.cpython-314.pyc.140383305862192'), (<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/api/__pycache__/user.cpython-314.pyc.140383305861296'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/schemas/__pycache__/user.cpython-314.pyc.140383305864624'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/repos/__pycache__/user.cpython-314.pyc.140383305864240'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/api/__pycache__/user.cpython-314.pyc.140383305861296'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/user.cpython-314.pyc.140383305862192'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/repos/__pycache__/user.cpython-314.pyc'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/schemas/__pycache__/user.cpython-314.pyc'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/api/__pycache__/user.cpython-314.pyc')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:2 changes detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/api/admin.py')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00024s] (1,)
+INFO:services.genre:result: <core.models.Genre object at 0x7f456b3452b0>
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 8.047s ago] (1,)
+INFO:services.genre:result: <core.models.Genre object at 0x7f456b359f90>
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 8.168s ago] (1,)
+INFO:services.genre:result: <core.models.Genre object at 0x7f456b359950>
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 8.299s ago] (1,)
+INFO:services.genre:result: <core.models.Genre object at 0x7f456b355480>
+INFO:sqlalchemy.engine.Engine:ROLLBACK
 INFO:main:Katana Started
-DEBUG:watchfiles.main:4 changes detected: {(<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/api/__pycache__/admin.cpython-314.pyc'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log'), (<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/api/__pycache__/admin.cpython-314.pyc.139921947167024'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/api/__pycache__/admin.cpython-314.pyc.139921947167024')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:2 changes detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/api/admin.py')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00018s] (1,)
+INFO:services.genre:result: <core.models.Genre object at 0x7f8ab11452b0>
+INFO:sqlalchemy.engine.Engine:ROLLBACK
 INFO:main:Katana Started
-DEBUG:watchfiles.main:13 changes detected: {(<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/api/__pycache__/admin.cpython-314.pyc'), (<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/schemas/__pycache__/admin.cpython-314.pyc.140483289651632'), (<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/api/__pycache__/admin.cpython-314.pyc.140483289647408'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/repos/__pycache__/admin.cpython-314.pyc'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/admin.cpython-314.pyc'), (<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/admin.cpython-314.pyc.140483289648432'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/api/__pycache__/admin.cpython-314.pyc.140483289647408'), (<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/repos/__pycache__/admin.cpython-314.pyc.140483289651248'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/services/__pycache__/admin.cpython-314.pyc.140483289648432'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/repos/__pycache__/admin.cpython-314.pyc.140483289651248'), (<Change.deleted: 3>, '/home/matteo/Desktop/Projects/katana/app/schemas/__pycache__/admin.cpython-314.pyc.140483289651632'), (<Change.added: 1>, '/home/matteo/Desktop/Projects/katana/app/schemas/__pycache__/admin.cpython-314.pyc')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
-DEBUG:watchfiles.main:1 change detected: {(<Change.modified: 2>, '/home/matteo/Desktop/Projects/katana/app/katana.log')}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO genre (name, label) VALUES (?, ?)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00015s] ('Romance', 'Stories')
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00046s] (2,)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO genre (name, label) VALUES (?, ?)
+INFO:sqlalchemy.engine.Engine:[cached since 7.69s ago] ('Isekai', 'Stories')
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 7.678s ago] (3,)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO genre (name, label) VALUES (?, ?)
+INFO:sqlalchemy.engine.Engine:[cached since 15.7s ago] ('Isekai', 'Stories')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:services.genre:Layer: services, usage: create, genre: name='Isekai' label='Stories'
+ERROR:services.genre:error: Error saving genre on DB
+Traceback (most recent call last):
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: genre.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matteo/Desktop/Projects/katana/app/repos/genre.py", line 27, in save_genre
+    db.commit()
+    ~~~~~~~~~^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: genre.name
+[SQL: INSERT INTO genre (name, label) VALUES (?, ?)]
+[parameters: ('Isekai', 'Stories')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/matteo/Desktop/Projects/katana/app/services/genre.py", line 54, in create_genre
+    result = save_genre(db, new_genre)
+  File "/home/matteo/Desktop/Projects/katana/app/repos/genre.py", line 32, in save_genre
+    raise ValueError("Error saving genre on DB")
+ValueError: Error saving genre on DB
+INFO:main:Katana Started
+INFO:main:Katana Started
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.name = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00020s] ('Isekai',)
+INFO:sqlalchemy.engine.Engine:INSERT INTO genre (name, label) VALUES (?, ?)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00013s] ('Isekai', 'Stories')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:services.genre:Layer: services, usage: create, genre: <core.models.Genre object at 0x7f640af452b0>
+ERROR:services.genre:error: Error saving genre on DB
+Traceback (most recent call last):
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: genre.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matteo/Desktop/Projects/katana/app/repos/genre.py", line 27, in save_genre
+    db.commit()
+    ~~~~~~~~~^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/matteo/Desktop/Projects/katana/app/.venv/lib64/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: genre.name
+[SQL: INSERT INTO genre (name, label) VALUES (?, ?)]
+[parameters: ('Isekai', 'Stories')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/matteo/Desktop/Projects/katana/app/services/genre.py", line 58, in create_genre
+    result = save_genre(db, new_genre)
+  File "/home/matteo/Desktop/Projects/katana/app/repos/genre.py", line 32, in save_genre
+    raise ValueError("Error saving genre on DB")
+ValueError: Error saving genre on DB
+INFO:main:Katana Started
+INFO:main:Katana Started
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT genre.id, genre.name, genre.label 
+FROM genre 
+WHERE genre.name = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00019s] ('Isekai',)
+INFO:services.genre:Layer: services, usage: create, genre: <core.models.Genre object at 0x7f962c03d2b0>
+ERROR:services.genre:error: 403: This Genre already exist
+Traceback (most recent call last):
+  File "/home/matteo/Desktop/Projects/katana/app/services/genre.py", line 51, in create_genre
+    raise HTTPException(status_code=403, detail=f"This Genre already exist")
+fastapi.exceptions.HTTPException: 403: This Genre already exist
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:main:Katana Started

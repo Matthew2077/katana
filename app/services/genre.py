@@ -14,7 +14,7 @@ def read_genre_by_id(db: Session, id: int):
         result = get_genre_by_id(db, id)
         if result is None:
             raise HTTPException(status_code=404, detail=f"genre {id} not found")
-        
+
         return result
     except Exception as e:
         logger.info(f"id: {id}, Layer: services, usage: read id")
@@ -36,6 +36,7 @@ def read_all_genre(db: Session):
         result = get_genre_list(db)
         if result is None:
             raise HTTPException(status_code=404, detail=f"DB has no genre")
+        logger.info(f"risult {result}")
         return result
     except Exception as e:
         logger.info("Layer: services, usage: read all")
@@ -45,6 +46,11 @@ def read_all_genre(db: Session):
 # CREATE NEW
 def create_genre(db: Session, genre: GenreCreate):
     try:
+        genre = get_genre_by_name(db, genre.name)
+        if genre is not None:
+            raise HTTPException(status_code=403, detail=f"This Genre already exist")
+        # L'errore non sale perche' nel terminale mi da errore 500
+        
         new_genre = Genre(
             name = genre.name,
             label = genre.label
@@ -55,6 +61,7 @@ def create_genre(db: Session, genre: GenreCreate):
     except Exception as e: 
         logger.info(f"Layer: services, usage: create, genre: {genre}")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 
 # UPDATE 
@@ -75,6 +82,7 @@ def update_genre(db: Session, genre_id: int, data: GenreUpdate):
     except Exception as e:
         logger.info(f"Layer: services, usage: update, data: {data}")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 
 def delete_genre(db: Session, genre_id: int):
@@ -90,3 +98,4 @@ def delete_genre(db: Session, genre_id: int):
     except Exception as e:
         logger.error(f"Layer: services, usage: delete, id: {genre_id}")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")

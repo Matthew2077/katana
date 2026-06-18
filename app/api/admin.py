@@ -8,7 +8,6 @@ from typing import List
 
 router = APIRouter()
 
-
 # READ 
 @router.get("/{id}", response_model=AdminRead)
 def admin_read_by_id(id: int, db: Session = Depends(get_db)):

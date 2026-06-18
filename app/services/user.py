@@ -18,7 +18,8 @@ def read_user_by_id(db: Session, id: int):
     except Exception as e:
         logger.info(f"id: {id}, Layer: services, usage: read id")
         logger.error(f"error: {e}", exc_info=True)
-
+        raise HTTPException(status_code=500, detail="Internal server error")
+    
 def read_user_by_name(db: Session, name: str):
     try: 
         result = get_user_by_name(db, name)
@@ -29,6 +30,7 @@ def read_user_by_name(db: Session, name: str):
     except Exception as e:
         logger.info(f"name: {name}, Layer: services, usage: read name")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 def read_all_users(db: Session):
     try:
@@ -40,6 +42,7 @@ def read_all_users(db: Session):
     except Exception as e:
         logger.info("Layer: services, usage: read all")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 # CREATE NEW user
 def create_user(db: Session, user: UserCreate):
@@ -54,6 +57,7 @@ def create_user(db: Session, user: UserCreate):
     except Exception as e: 
         logger.info(f"Layer: services, usage: create, user: {user}")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 # UPDATE user
 def update_user(db: Session, user_id: int, data: UserUpdate):
@@ -71,6 +75,7 @@ def update_user(db: Session, user_id: int, data: UserUpdate):
     except Exception as e:
         logger.info(f"Layer: services, usage: update, data: {data}")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 def delete_user(db: Session, user_id: int):
     try:
@@ -84,4 +89,5 @@ def delete_user(db: Session, user_id: int):
     except Exception as e:
         logger.error(f"Layer: services, usage: delete, id: {user_id}")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 

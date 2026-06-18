@@ -11,7 +11,7 @@ router = APIRouter()
 # READ 
 @router.get("/{id}", response_model=NovelRead)
 def novel_read_by_id(id: int, db: Session = Depends(get_db)):
-    return novel_read_by_id(db, id)
+    return read_novel_by_id(db, id)
 
 @router.get("/{name}", response_model=NovelRead)
 def work_read_by_name(name: str, db: Session = Depends(get_db)):

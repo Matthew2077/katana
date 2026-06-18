@@ -40,6 +40,7 @@ app.add_middleware(
 # LOGGING SETUP
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename='katana.log', level=logging.DEBUG)
+logging.getLogger("watchfiles").setLevel(logging.WARNING)
 logger.info('Katana Started')
 
 

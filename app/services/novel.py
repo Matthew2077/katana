@@ -26,6 +26,7 @@ def read_novel_by_id(db: Session, id: int):
     except Exception as e:
         logger.info(f"id: {id}, Layer: services, usage: read id")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 def read_novel_by_name(db: Session, name: str):
     try: 
@@ -36,6 +37,7 @@ def read_novel_by_name(db: Session, name: str):
     except Exception as e:
         logger.info(f"name: {name}, Layer: services, usage: read name")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 
 def read_all_novel(db: Session):
@@ -48,6 +50,7 @@ def read_all_novel(db: Session):
     except Exception as e:
         logger.info("Layer: services, usage: read all")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 
 # CREATE NEW
@@ -67,6 +70,7 @@ def create_novel(db: Session, novel: NovelCreate):
     except Exception as e: 
         logger.info(f"Layer: services, usage: create, novel: {novel}")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 
 # UPDATE 
@@ -88,6 +92,7 @@ def update_novel(db: Session, novel_id: int, data: NovelUpdate):
     except Exception as e:
         logger.info(f"Layer: services, usage: update, data: {data}")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 
 def delete_novel(db: Session, novel_id: int):
@@ -103,3 +108,4 @@ def delete_novel(db: Session, novel_id: int):
     except Exception as e:
         logger.error(f"Layer: services, usage: delete, id: {novel_id}")
         logger.error(f"error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
