@@ -30,6 +30,7 @@ def read_work_by_id(db: Session, id: int):
 
 def read_work_by_name(db: Session, name: str):
     try: 
+        
         result = get_work_by_name(db, name)
         if result is None:
             raise HTTPException(status_code=404, detail=f"Work {name} not found")

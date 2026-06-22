@@ -5,6 +5,7 @@ from typing import Optional
 class AnimeBase(BaseModel):
     name: str
     genre_id: int
+    work_id: int
     season: int
     total_episodes: int
     watched_episodes: int

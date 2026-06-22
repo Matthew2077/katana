@@ -7,7 +7,7 @@ from api import work, anime, manga, novel, genre, admin, user
 
 app = FastAPI(
     title="Katana API",
-    version="1.0.0",
+    version="1.1.0",
     description=""
 )
 
@@ -15,10 +15,10 @@ app = FastAPI(
 Base.metadata.create_all(bind=engine)
 
 # Routers
-app.include_router(work.router, prefix="/api/work", tags=["work"])
-app.include_router(novel.router, prefix="/api/novel", tags=["novel"])
-app.include_router(manga.router, prefix="/api/manga", tags=["manga"])
-app.include_router(anime.router, prefix="/api/anime", tags=["anime"])
+app.include_router(work.router, prefix="/katana/api/work", tags=["work"])
+app.include_router(novel.router, prefix="/katana/api/novel", tags=["novel"])
+app.include_router(manga.router, prefix="/katana/api/manga", tags=["manga"])
+app.include_router(anime.router, prefix="/katana/api/anime", tags=["anime"])
 
 app.include_router(genre.router, prefix="/api/genre", tags=["genre"])
 # app.include_router(user.router, prefix="/api/user", tags=["user"])

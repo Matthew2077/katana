@@ -4,7 +4,8 @@ from typing import Optional
 class NovelBase(BaseModel):
     name: str
     genre_id: int
-    season: int
+    volume: int
+    work_id: int
     total_pages: int
     watched_pages: int
     model_config = ConfigDict(from_attributes=True)
@@ -15,7 +16,7 @@ class NovelCreate(NovelBase):
 class NovelUpdate(BaseModel):
     name: Optional[str] = None
     genre_id: Optional[int] = None
-    season: Optional[int] = None
+    volume: Optional[int] = None
     total_pages: Optional[int] = None
     watched_pages: Optional[int] = None
     model_config = ConfigDict(from_attributes=True)

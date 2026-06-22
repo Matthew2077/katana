@@ -1,7 +1,7 @@
 import sqlalchemy as sa
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
-engine = sa.create_engine("sqlite:///example.db", echo=True)
+engine = sa.create_engine("sqlite:///katana.db", echo=True)
 
 session = sessionmaker(bind=engine)
 

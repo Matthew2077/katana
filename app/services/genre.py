@@ -46,8 +46,8 @@ def read_all_genre(db: Session):
 # CREATE NEW
 def create_genre(db: Session, genre: GenreCreate):
     try:
-        genre = get_genre_by_name(db, genre.name)
-        if genre is not None:
+        genere = get_genre_by_name(db, genre.name)
+        if genere is not None:
             raise HTTPException(status_code=403, detail=f"This Genre already exist")
         # L'errore non sale perche' nel terminale mi da errore 500
         

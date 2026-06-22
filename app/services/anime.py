@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
 from repos.anime import get_anime_by_id, get_anime_by_name, get_anime_list, save_anime, edit_anime, erase_anime
 from core.models import Anime
+from repos.work import get_work_by_id
 from schemas.anime import AnimeCreate, AnimeUpdate
 from fastapi import HTTPException
 from repos.genre import get_genre_by_id
@@ -56,11 +57,19 @@ def read_all_anime(db: Session):
 # CREATE NEW
 def create_anime(db: Session, anime: AnimeCreate):
     try:
+                # check if work exist
+        work = get_work_by_id(db, anime.work_id)
+        if work is None:
+            raise HTTPException(status_code=404, detail=f"work {anime.work_id} not found")
+        
+        # check if genre exist
+        check_genre_exists(db, anime.genre_id)
+
         new_anime = Anime(
-            id = anime.id,
             name = anime.name,
             season = anime.season,
             genre_id = anime.genre_id,
+            work_id = anime.work_id,
             total_episodes = anime.total_episodes,
             watched_episodes = anime.watched_episodes
         )

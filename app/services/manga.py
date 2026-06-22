@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
 from repos.manga import get_manga_by_id, get_manga_by_name, get_manga_list, save_manga, edit_manga, erase_manga
 from core.models import Manga
+from repos.work import get_work_by_id
 from schemas.manga import MangaCreate, MangaUpdate
 from fastapi import HTTPException
 from repos.genre import get_genre_by_id
@@ -55,11 +56,19 @@ def read_all_manga(db: Session):
 # CREATE NEW
 def create_manga(db: Session, manga: MangaCreate):
     try:
+        # check if work exist
+        work = get_work_by_id(db, manga.work_id)
+        if work is None:
+            raise HTTPException(status_code=404, detail=f"work {manga.work_id} not found")
+        
+        # check if genre exist
+        check_genre_exists(db, manga.genre_id)
+
         new_manga = Manga(
-            id = manga.id,
             name = manga.name,
             season = manga.season,
             genre_id = manga.genre_id,
+            work_id = manga.work_id,
             total_chapters = manga.total_chapters,
             watched_chapters = manga.watched_chapters
         )

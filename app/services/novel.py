@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
 from repos.novel import get_novel_by_id, get_novel_by_name, get_novel_list, save_novel, edit_novel, erase_novel
 from repos.genre import get_genre_by_id
+from repos.work import get_work_by_id
 from core.models import Novel
 from schemas.novel import NovelCreate, NovelUpdate
 from schemas.genre import GenreRead
@@ -56,11 +57,19 @@ def read_all_novel(db: Session):
 # CREATE NEW
 def create_novel(db: Session, novel: NovelCreate):
     try:
+        # check if work exist
+        work = get_work_by_id(db, novel.work_id)
+        if work is None:
+            raise HTTPException(status_code=404, detail=f"work {novel.work_id} not found")
+        
+        # check if genre exist
+        check_genre_exists(db, novel.genre_id)
+
         new_novel = Novel(
-            id = novel.id,
             name = novel.name,
-            season = novel.season,
+            volume = novel.volume,
             genre_id = novel.genre_id,
+            work_id = novel.work_id,
             total_pages = novel.total_pages,
             watched_pages = novel.watched_pages
         )

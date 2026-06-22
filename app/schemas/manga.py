@@ -6,6 +6,7 @@ class MangaBase(BaseModel):
     name: str
     genre_id: int
     season: int
+    work_id: int
     total_chapters: int
     watched_chapters: int
     model_config = ConfigDict(from_attributes=True)
